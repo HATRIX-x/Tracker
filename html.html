@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Tracker</h1>
+        <label for="income">Income:</label>
+        <input type="number" id="income" placeholder="Enter your income">
+        <label for="expenses">Expenses:</label>
+        <input type="number" id="expenses" placeholder="Enter your expenses">
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="groceries">Groceries</option>
+            <option value="rent">Rent</option>
+            <option value="utilities">Utilities</option>
+            <!-- Add more options as needed -->
+        </select>
+        <label for="budgetGoal">Budget Goal:</label>
+        <input type="number" id="budgetGoal" placeholder="Enter your budget goal">
+        <button onclick="calculateBudget()">Calculate</button>
+        <div id="result"></div>
+
+        <!-- Canvas for chart -->
+
+        <canvas id="myChart" width="400" height="200"></canvas>
+
+        <!-- End of chart canvas -->
+        <!-- Expense history section -->
+
+        <div id="expenseHistory"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
